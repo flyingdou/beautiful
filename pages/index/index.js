@@ -180,7 +180,7 @@ Page({
   // 俱乐部位置
   clubLocation: function(){
     /**
-     * 转换俱乐部列表数据中的坐标为腾讯系坐标
+     * 转换俱乐部列表数据中的坐标为腾讯系坐标(弃用)
      */
     var convertPoint = (club) => {
       // 调用util方法进行坐标转换(百度坐标系转换为腾讯坐标系)
@@ -192,7 +192,7 @@ Page({
 
     // 去地图中
     var clubList = [this.data.club];
-    wx.setStorageSync('clubList', clubList.map(convertPoint));
+    wx.setStorageSync('clubList', clubList);
     wx.navigateTo({
       url: '../map/map'
     });
@@ -371,14 +371,14 @@ Page({
       if (location_result.refuse) {
         return;
       }
-      // 坐标系转换
-      var point = util.MapabcEncryptToBdmap(location_result.latitude, location_result.longitude);
+      // 坐标系转换(弃用)
+      // var point = util.MapabcEncryptToBdmap(location_result.latitude, location_result.longitude);
       // 请求参数
       let param = {
         memberId: wx.getStorageSync('memberId'),
         clubId: wx.getStorageSync('clubId'),
-        longitude: point.lng,
-        latitude: point.lat
+        longitude: location_result.longitude,
+        latitude: location_result.latitude
       }
       // 调用服务端签到接口
       var signTime = await wxApi.getServerTime();
