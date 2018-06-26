@@ -202,20 +202,14 @@ page{
 
 .userInfo-row{
   padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
   height: 1.4rem;
   line-height: 1.4rem;
   overflow: hidden;
   font-size: 28rpx;
   background-color: #FFF;
   border-bottom: 1px solid #F0F0F2;
-}
-
-.userInfo-row-left{
-  float: left;
-}
-
-.userInfo-row-right{
-  float: right;
 }
 
 .userInfo-row-right > input{
