@@ -215,6 +215,7 @@ page{
 .userInfo-row-right > input{
   text-align: right;
   color: #BBB;
+
 }
 
 .overflow{
