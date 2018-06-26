@@ -202,8 +202,6 @@ page{
 
 .userInfo-row{
   padding: 20rpx;
-  display: flex;
-  justify-content: space-between;
   height: 1.4rem;
   line-height: 1.4rem;
   overflow: hidden;
@@ -212,7 +210,17 @@ page{
   border-bottom: 1px solid #F0F0F2;
 }
 
+.userInfo-row-left{
+  float: left;
+}
+
+.userInfo-row-right{
+  float: right;
+  width: 50%;
+}
+
 .userInfo-row-right > input{
+  width: 100%;
   text-align: right;
   color: #BBB;
 
