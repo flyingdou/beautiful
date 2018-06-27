@@ -78,9 +78,10 @@ Page({
     wx.request({
       url: app.request_url + 'findTicketByType.asp',
       data: {
-        memberId: memberId,
+        memberId: wx.getStorageSync("memberId"),
         productId: obj.data.productId,
-        productType: obj.data.productType
+        productType: obj.data.productType,
+        clubId: wx.getStorageSync('clubId')
       },
       success: function (res) {
         // 设置数据源

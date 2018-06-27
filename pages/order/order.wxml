@@ -80,7 +80,7 @@
       健身顾问（推荐人）
     </view>
     <view class='userInfo-row-right'>
-      <input type='text' placeholder='请输入信息来源' bindinput='changeOrigin'>
+      <input type='text' placeholder='请输入其姓名' bindinput='changeOrigin'>
       </input>
     </view>
   </view>
