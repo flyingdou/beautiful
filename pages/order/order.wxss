@@ -223,6 +223,7 @@ page{
   width: 100%;
   text-align: right;
   color: #BBB;
+
 }
 
 .overflow{
