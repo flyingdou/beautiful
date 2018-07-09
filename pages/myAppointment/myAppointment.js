@@ -90,7 +90,6 @@ Page({
       success: function (res) {
         // 网络请求成功
         res = JSON.parse(res.data);
-        console.log(res);
         if (res.success) {
 
           // 成功预约
