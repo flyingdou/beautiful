@@ -522,7 +522,7 @@ Page({
   // 健身直播
   live: function(){
     wx.navigateTo({
-      url: '../live/live'
+      url: '../video/video'
     });
   },
   // 领券
